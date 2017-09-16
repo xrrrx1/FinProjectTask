@@ -1,0 +1,81 @@
+body {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f8f8f8;
+  margin: 0;
+  padding: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  body .loader {
+    display: block;
+    width: 100px;
+    height: 100px;
+    margin-top: 20vh; }
+  body section {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 600px;
+    padding: 30px;
+    margin-top: 5vh;
+    background-color: white;
+    border-radius: 3px;
+    box-shadow: 0 2px 16px 1px rgba(0, 0, 0, 0.14); }
+    body section header {
+      display: flex;
+      flex-direction: column;
+      padding-bottom: 20px;
+      border-bottom: 1px solid #dddddd;
+      margin-bottom: 20px; }
+      body section header h1 {
+        font-size: 26px;
+        font-weight: 400;
+        margin: 0 0 10px; }
+        body section header h1 span {
+          font-size: 17px;
+          padding-left: 20px; }
+      body section header .code {
+        font-weight: 500;
+        padding-bottom: 5px; }
+    body section .period-selector {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      height: 40px;
+      padding-bottom: 15px; }
+      body section .period-selector .item {
+        display: flex;
+        font-size: 16px;
+        color: #4f4f4f;
+        padding: 9px 12px;
+        border-top: 1px solid #dddddd;
+        border-right: 1px solid #dddddd;
+        border-bottom: 1px solid #dddddd;
+        cursor: pointer; }
+        body section .period-selector .item:first-child {
+          border-left: 1px solid #dddddd;
+          border-radius: 3px 0 0 3px; }
+        body section .period-selector .item:last-child {
+          border-radius: 0 3px 3px 0; }
+        body section .period-selector .item.active {
+          background-color: rgba(221, 221, 221, 0.4); }
+    body section .type-selector {
+      display: block;
+      position: absolute;
+      width: 110px;
+      height: 40px;
+      right: 48px;
+      bottom: 100px;
+      padding: 8px 16px;
+      border: 1px solid #dddddd;
+      border-radius: 3px;
+      font-size: 16px;
+      color: #4f4f4f; }
+    body section .container svg .tick {
+      font-size: 12px;
+      color: #4f4f4f; }
+      body section .container svg .tick:nth-child(even) {
+        display: none; }
